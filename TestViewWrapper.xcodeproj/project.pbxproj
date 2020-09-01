@@ -12,6 +12,8 @@
 		28B7295824FE17C2001DB36D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28B7295724FE17C2001DB36D /* Assets.xcassets */; };
 		28B7295B24FE17C2001DB36D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28B7295A24FE17C2001DB36D /* Preview Assets.xcassets */; };
 		28B7295E24FE17C2001DB36D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28B7295C24FE17C2001DB36D /* Main.storyboard */; };
+		28B7296724FE17D7001DB36D /* WrappedColorWell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B7296624FE17D7001DB36D /* WrappedColorWell.swift */; };
+		28B7296924FE17FB001DB36D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B7296824FE17FB001DB36D /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		28B7295D24FE17C2001DB36D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		28B7295F24FE17C2001DB36D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28B7296024FE17C2001DB36D /* TestViewWrapper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestViewWrapper.entitlements; sourceTree = "<group>"; };
+		28B7296624FE17D7001DB36D /* WrappedColorWell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WrappedColorWell.swift; sourceTree = "<group>"; };
+		28B7296824FE17FB001DB36D /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +65,9 @@
 				28B7295C24FE17C2001DB36D /* Main.storyboard */,
 				28B7295F24FE17C2001DB36D /* Info.plist */,
 				28B7296024FE17C2001DB36D /* TestViewWrapper.entitlements */,
+				28B7296624FE17D7001DB36D /* WrappedColorWell.swift */,
 				28B7295924FE17C2001DB36D /* Preview Content */,
+				28B7296824FE17FB001DB36D /* Model.swift */,
 			);
 			path = TestViewWrapper;
 			sourceTree = "<group>";
@@ -146,7 +152,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				28B7295624FE17C1001DB36D /* ContentView.swift in Sources */,
+				28B7296724FE17D7001DB36D /* WrappedColorWell.swift in Sources */,
 				28B7295424FE17C1001DB36D /* AppDelegate.swift in Sources */,
+				28B7296924FE17FB001DB36D /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

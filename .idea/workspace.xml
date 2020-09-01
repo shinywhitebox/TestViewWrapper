@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="157db305-05cf-4756-96ef-db9ef550dea8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/TestViewWrapper/Model.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestViewWrapper/WrappedColorWell.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestViewWrapper.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/TestViewWrapper.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestViewWrapper.xcodeproj/xcuserdata/neil.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" afterPath="$PROJECT_DIR$/TestViewWrapper.xcodeproj/xcuserdata/neil.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestViewWrapper/AppDelegate.swift" beforeDir="false" afterPath="$PROJECT_DIR$/TestViewWrapper/AppDelegate.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestViewWrapper/ContentView.swift" beforeDir="false" afterPath="$PROJECT_DIR$/TestViewWrapper/ContentView.swift" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="macos_macos_x86_64" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1gthWsKHQVzQMzrXS718GGH7ZP3" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/TestViewWrapper.xcodeproj" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration name="TestViewWrapper" type="AppleRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="TestViewWrapper" TARGET_NAME="TestViewWrapper" CONFIG_NAME="Debug" SCHEME_NAME="TestViewWrapper" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" RUN_TARGET_PROJECT_NAME="TestViewWrapper" RUN_TARGET_NAME="TestViewWrapper" MAKE_ACTIVE="TRUE" SHOULD_DEBUG_EXTENSIONS="false">
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <embedded_app_extension_list />
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="157db305-05cf-4756-96ef-db9ef550dea8" name="Default Changelist" comment="" />
+      <created>1598939830804</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1598939830804</updated>
+      <workItem from="1598939831854" duration="4580000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="2080" height="302" key="GridCell.Tab.0.bottom" timestamp="1598947280449">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state width="2080" height="302" key="GridCell.Tab.0.bottom/0.23.2560.1337/-2560.-46.2560.1577@0.23.2560.1337" timestamp="1598947280449" />
+    <state width="2080" height="302" key="GridCell.Tab.0.center" timestamp="1598947280449">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state width="2080" height="302" key="GridCell.Tab.0.center/0.23.2560.1337/-2560.-46.2560.1577@0.23.2560.1337" timestamp="1598947280449" />
+    <state width="2080" height="302" key="GridCell.Tab.0.left" timestamp="1598947280449">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state width="2080" height="302" key="GridCell.Tab.0.left/0.23.2560.1337/-2560.-46.2560.1577@0.23.2560.1337" timestamp="1598947280449" />
+    <state width="2080" height="302" key="GridCell.Tab.0.right" timestamp="1598947280449">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state width="2080" height="302" key="GridCell.Tab.0.right/0.23.2560.1337/-2560.-46.2560.1577@0.23.2560.1337" timestamp="1598947280449" />
+    <state width="2080" height="429" key="GridCell.Tab.1.bottom" timestamp="1598947279272">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state width="2080" height="429" key="GridCell.Tab.1.bottom/0.23.2560.1337/-2560.-46.2560.1577@0.23.2560.1337" timestamp="1598947279272" />
+    <state width="2080" height="429" key="GridCell.Tab.1.center" timestamp="1598947279271">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state width="2080" height="429" key="GridCell.Tab.1.center/0.23.2560.1337/-2560.-46.2560.1577@0.23.2560.1337" timestamp="1598947279271" />
+    <state width="2080" height="429" key="GridCell.Tab.1.left" timestamp="1598947279271">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state width="2080" height="429" key="GridCell.Tab.1.left/0.23.2560.1337/-2560.-46.2560.1577@0.23.2560.1337" timestamp="1598947279271" />
+    <state width="2080" height="429" key="GridCell.Tab.1.right" timestamp="1598947279272">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state width="2080" height="429" key="GridCell.Tab.1.right/0.23.2560.1337/-2560.-46.2560.1577@0.23.2560.1337" timestamp="1598947279272" />
+    <state x="945" y="328" width="670" height="676" key="search.everywhere.popup" timestamp="1598946118667">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state x="945" y="328" width="670" height="676" key="search.everywhere.popup/0.23.2560.1337/-2560.-46.2560.1577@0.23.2560.1337" timestamp="1598946118667" />
+  </component>
+</project>
