@@ -20,16 +20,19 @@ struct ContentView: View {
             self.state[self.selection]?.color = color
         })
         return VSplitView {
-            Section(header: Text("Hi!")) {
+            Section(header: HStack {
+                Text("Hi!")
+//                Spacer()
+            }) {
                 List(selection: self.$selection) {
                     ForEach(state.items, id: \.id) { item in
                         HStack {
                             Text(item.name)
+                            Spacer().frame(minHeight: 2)
                             Rectangle()
                                     .size(CGSize(width: 45, height: 22))
                                     .fill(Color(item.color))
                                     .cornerRadius(4)
-                            Spacer()
                         }
                     }
                     Spacer()
@@ -40,15 +43,16 @@ struct ContentView: View {
                 if selection != nil {
                     HStack {
                         WrappedColorWell(selectedColor: colorBinding)
+                        Spacer()
                         Rectangle()
                                 .fill(Color(self.state[self.selection]?.color ?? NSColor.clear))
-                    }
+                    }.frame(minHeight: 32)
                 } else {
                     Text("Select an item up top")
                 }
                 Spacer()
             }
-        }
+        }.frame(minHeight: 200)
     }
 }
 

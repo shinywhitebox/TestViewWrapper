@@ -13,10 +13,19 @@ struct Item {
     var id = UUID()
     var name: String
     var color: NSColor
+
+    public mutating func setColor(col: NSColor) {
+        self.color = col
+    }
 }
 
 class AppState: ObservableObject {
     @Published var items: [Item] = []
+
+    func updateColorFor(_ item: Item, _ color: NSColor) {
+        self[item.id]?.color = color
+    }
+
     @Published var selectedItem: UUID?
 
     public static func fakeData() -> AppState {
@@ -26,7 +35,7 @@ class AppState: ObservableObject {
         return appState
     }
 
-     public subscript(id: UUID?) -> Item? {
+    public subscript(id: UUID?) -> Item? {
         get {
             items.first {
                 $0.id == id
