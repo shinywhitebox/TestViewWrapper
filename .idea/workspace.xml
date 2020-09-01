@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="157db305-05cf-4756-96ef-db9ef550dea8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestViewWrapper.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/TestViewWrapper.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestViewWrapper/ContentView.swift" beforeDir="false" afterPath="$PROJECT_DIR$/TestViewWrapper/ContentView.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestViewWrapper/Model.swift" beforeDir="false" afterPath="$PROJECT_DIR$/TestViewWrapper/Model.swift" afterDir="false" />
-    </list>
+    <list default="true" id="157db305-05cf-4756-96ef-db9ef550dea8" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,7 +53,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1598939830804</updated>
-      <workItem from="1598939831854" duration="5944000" />
+      <workItem from="1598939831854" duration="6383000" />
     </task>
     <servers />
   </component>
@@ -66,22 +61,22 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="2080" height="302" key="GridCell.Tab.0.bottom" timestamp="1598952803559">
+    <state width="2080" height="302" key="GridCell.Tab.0.bottom" timestamp="1598952886455">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state width="2080" height="302" key="GridCell.Tab.0.bottom/0.23.2560.1337/-2560.-46.2560.1577@0.23.2560.1337" timestamp="1598952803559" />
-    <state width="2080" height="302" key="GridCell.Tab.0.center" timestamp="1598952803559">
+    <state width="2080" height="302" key="GridCell.Tab.0.bottom/0.23.2560.1337/-2560.-46.2560.1577@0.23.2560.1337" timestamp="1598952886455" />
+    <state width="2080" height="302" key="GridCell.Tab.0.center" timestamp="1598952886454">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state width="2080" height="302" key="GridCell.Tab.0.center/0.23.2560.1337/-2560.-46.2560.1577@0.23.2560.1337" timestamp="1598952803559" />
-    <state width="2080" height="302" key="GridCell.Tab.0.left" timestamp="1598952803559">
+    <state width="2080" height="302" key="GridCell.Tab.0.center/0.23.2560.1337/-2560.-46.2560.1577@0.23.2560.1337" timestamp="1598952886454" />
+    <state width="2080" height="302" key="GridCell.Tab.0.left" timestamp="1598952886454">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state width="2080" height="302" key="GridCell.Tab.0.left/0.23.2560.1337/-2560.-46.2560.1577@0.23.2560.1337" timestamp="1598952803559" />
-    <state width="2080" height="302" key="GridCell.Tab.0.right" timestamp="1598952803559">
+    <state width="2080" height="302" key="GridCell.Tab.0.left/0.23.2560.1337/-2560.-46.2560.1577@0.23.2560.1337" timestamp="1598952886454" />
+    <state width="2080" height="302" key="GridCell.Tab.0.right" timestamp="1598952886454">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state width="2080" height="302" key="GridCell.Tab.0.right/0.23.2560.1337/-2560.-46.2560.1577@0.23.2560.1337" timestamp="1598952803559" />
+    <state width="2080" height="302" key="GridCell.Tab.0.right/0.23.2560.1337/-2560.-46.2560.1577@0.23.2560.1337" timestamp="1598952886454" />
     <state width="2080" height="429" key="GridCell.Tab.1.bottom" timestamp="1598947279272">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
