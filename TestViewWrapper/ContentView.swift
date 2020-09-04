@@ -11,21 +11,19 @@ import SwiftUI
 struct ContentView: View {
     @EnvironmentObject var state: AppState
 
-    @State var selection: UUID?
-
     var body: some View {
+        let selection = self.$state.container.selectedItem
         let colorBinding: Binding<NSColor> = Binding<NSColor>(get: {
-            self.state.container[self.selection]?.color ?? NSColor.black
+            self.state.container[selection.wrappedValue]?.color ?? NSColor.black
         }, set: { color in
-            self.state.container[self.selection]?.color = color
+            self.state.container[selection.wrappedValue]?.color = color
         })
         
         return VSplitView {
             Section(header: HStack {
                 Text("Hi!")
-//                Spacer()
             }) {
-                List(selection: self.$selection) {
+                List(selection: selection) {
                     ForEach(state.container.items, id: \.id) { item in
                         HStack {
                             Text(item.name)
@@ -46,7 +44,7 @@ struct ContentView: View {
                         WrappedColorWell(selectedColor: colorBinding)
                         Spacer()
                         Rectangle()
-                                .fill(Color(self.state.container[self.selection]?.color ?? NSColor.clear))
+                                .fill(Color(self.state.container[selection.wrappedValue]?.color ?? NSColor.clear))
                     }.frame(minHeight: 32)
                 } else {
                     Text("Select an item up top")

@@ -19,12 +19,19 @@ struct Item {
     }
 }
 
-struct Container {
+struct SceneList {
     var items: [Item] = []
     var selectedItem: UUID?
 
     mutating func updateColorFor(_ item: Item, _ color: NSColor) {
         self[item.id]?.color = color
+    }
+
+    public mutating func addItem(item: Item) {
+        self.items.append(item)
+        if self.selectedItem == nil {
+            self.selectedItem = item.id
+        }
     }
 
     public subscript(id: UUID?) -> Item? {
@@ -46,16 +53,16 @@ struct Container {
 }
 
 class AppState: ObservableObject {
-    @Published var container: Container = Container()
+    @Published var container: SceneList = SceneList()
 
     public static func fakeData() -> AppState {
         let appState = AppState()
-        var container = Container()
-        container.items.append(Item(name: "Foo", color: NSColor.systemIndigo))
-        container.items.append(Item(name: "Bar", color: NSColor.systemYellow))
-        container.items.append(Item(name: "Muppet", color: NSColor.systemTeal))
-        container.items.append(Item(name: "Train", color: NSColor.systemOrange))
-        container.items.append(Item(name: "Animal", color: NSColor.systemBrown))
+        var container = SceneList()
+        container.addItem(item: Item(name: "Foo", color: NSColor.systemIndigo))
+        container.addItem(item: Item(name: "Bar", color: NSColor.systemYellow))
+        container.addItem(item: Item(name: "Muppet", color: NSColor.systemTeal))
+        container.addItem(item: Item(name: "Train", color: NSColor.systemOrange))
+        container.addItem(item: Item(name: "Animal", color: NSColor.systemBrown))
         appState.container = container
         return appState
     }
