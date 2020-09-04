@@ -6,35 +6,53 @@
 import Foundation
 import SwiftUI
 
-struct ColorEditor: View {
-    @EnvironmentObject var state: AppState
+struct ColorEditorState {
+    var scene: SceneDescription
+}
 
-    var item: Item
-
-    var colorBinding: Binding<NSColor> {
-        Binding<NSColor>(
-                get: {
-                    self.item.color
+extension AppState {
+    func binding<Value>(_ keyPath: KeyPath<AppState, Value>, action: @escaping (Value) -> Void) -> Binding<Value> {
+        Binding<Value>(
+                get: { () -> Value in
+                    self[keyPath: keyPath]
                 },
-                set: { color in
-                    self.state.updateColorFor(self.item, color)
+                set: { (v: Value) in
+                    action(v)
                 }
         )
     }
+}
+
+struct ColorEditor: View {
+    @Environment(\.appState) private var state: AppState.Injection
+
+    var scene: SceneDescription
 
     var body: some View {
-        HStack {
-            WrappedColorWell(selectedColor: self.colorBinding)
-            Rectangle()
-                    .fill(Color(self.item.color))
+        NSLog("Render ColorEditor using \(self.scene.name)")
+        let colorPath = \AppState.scene.scenes[self.scene.id]?.color
+        let state = self.state.appState.value
+        let colorBinding = state.binding(colorPath) { color in
+            NSLog("Should update color of \(self.scene.name) to \(String(describing: color))")
+            if let c = color {
+                self.state.appState.value.scene.scenes.updateColorFor(self.scene, c)
+            }
         }
+
+
+        return HStack {
+            WrappedColorWell(selectedColor: colorBinding)
+            Spacer()
+            Rectangle()
+                    .fill(Color(self.scene.color))
+        }.frame(minHeight: 32)
     }
 }
 
 struct ColorEditor_Previews: PreviewProvider {
     static var previews: some View {
-        let state = AppState.fakeData()
-        let item = state.items.first!
-        return ColorEditor(item: item).environmentObject(state)
+        let injected = AppState.Injection.defaultValue
+        let scene = injected.appState.value.scene.scenes.items.first!
+        return ColorEditor(scene: scene).environment(\.appState, injected)
     }
 }

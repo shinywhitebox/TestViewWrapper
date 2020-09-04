@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="157db305-05cf-4756-96ef-db9ef550dea8" name="Default Changelist" comment="" />
+    <list default="true" id="157db305-05cf-4756-96ef-db9ef550dea8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestViewWrapper.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/TestViewWrapper.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestViewWrapper/AppDelegate.swift" beforeDir="false" afterPath="$PROJECT_DIR$/TestViewWrapper/AppDelegate.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestViewWrapper/ColorEditor.swift" beforeDir="false" afterPath="$PROJECT_DIR$/TestViewWrapper/ColorEditor.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestViewWrapper/ContentView.swift" beforeDir="false" afterPath="$PROJECT_DIR$/TestViewWrapper/ContentView.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestViewWrapper/Model.swift" beforeDir="false" afterPath="$PROJECT_DIR$/TestViewWrapper/Model.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestViewWrapper/WrappedColorWell.swift" beforeDir="false" afterPath="$PROJECT_DIR$/TestViewWrapper/WrappedColorWell.swift" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,6 +33,7 @@
     <property name="OBJC.PRESERVED_TARGET_SELECTION" value="TestViewWrapper" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.jetbrains.cidr.execution.build.XcodeBuildErrorTreeViewPanel.FilterMode" value="ErrorsOnly" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/TestViewWrapper.xcodeproj" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -33,6 +42,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunManager">
     <configuration name="TestViewWrapper" type="AppleRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="TestViewWrapper" TARGET_NAME="TestViewWrapper" CONFIG_NAME="Debug" SCHEME_NAME="TestViewWrapper" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" RUN_TARGET_PROJECT_NAME="TestViewWrapper" RUN_TARGET_NAME="TestViewWrapper" MAKE_ACTIVE="TRUE" SHOULD_DEBUG_EXTENSIONS="false">
@@ -53,7 +63,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1598939830804</updated>
-      <workItem from="1598939831854" duration="6383000" />
+      <workItem from="1598939831854" duration="20422000" />
     </task>
     <servers />
   </component>
@@ -61,22 +71,47 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="2080" height="302" key="GridCell.Tab.0.bottom" timestamp="1598952886455">
-      <screen x="0" y="23" width="2560" height="1337" />
+    <state x="1093" y="457" key="#com.intellij.ide.util.MemberChooser" timestamp="1599174337095">
+      <screen x="0" y="23" width="2560" height="1340" />
     </state>
-    <state width="2080" height="302" key="GridCell.Tab.0.bottom/0.23.2560.1337/-2560.-46.2560.1577@0.23.2560.1337" timestamp="1598952886455" />
-    <state width="2080" height="302" key="GridCell.Tab.0.center" timestamp="1598952886454">
-      <screen x="0" y="23" width="2560" height="1337" />
+    <state x="-1467" y="465" key="#com.intellij.ide.util.MemberChooser/0.23.2560.1337/-2560.-46.2560.1577@-2560.-46.2560.1577" timestamp="1598994830391" />
+    <state x="1093" y="457" key="#com.intellij.ide.util.MemberChooser/0.23.2560.1340/-2560.-46.2560.1577@0.23.2560.1340" timestamp="1599174337095" />
+    <state width="1574" height="327" key="GridCell.Tab.0.bottom" timestamp="1599174649364">
+      <screen x="0" y="23" width="2560" height="1340" />
     </state>
-    <state width="2080" height="302" key="GridCell.Tab.0.center/0.23.2560.1337/-2560.-46.2560.1577@0.23.2560.1337" timestamp="1598952886454" />
-    <state width="2080" height="302" key="GridCell.Tab.0.left" timestamp="1598952886454">
-      <screen x="0" y="23" width="2560" height="1337" />
+    <state width="2518" height="400" key="GridCell.Tab.0.bottom/0.23.2560.1337/-2560.-46.2560.1577@-2560.-46.2560.1577" timestamp="1598995438834" />
+    <state width="2518" height="330" key="GridCell.Tab.0.bottom/0.23.2560.1337/-2560.-46.2560.1577@0.23.2560.1337" timestamp="1598996534981" />
+    <state width="1574" height="327" key="GridCell.Tab.0.bottom/0.23.2560.1340/-2560.-46.2560.1577@0.23.2560.1340" timestamp="1599174649364" />
+    <state width="1574" height="329" key="GridCell.Tab.0.bottom/0.23.2560.1342/-2560.-46.2560.1577@0.23.2560.1342" timestamp="1599104865734" />
+    <state width="1574" height="328" key="GridCell.Tab.0.bottom/0.23.2560.1343/-2560.-46.2560.1577@0.23.2560.1343" timestamp="1599170676353" />
+    <state width="1238" height="330" key="GridCell.Tab.0.bottom/0.23.2560.1345/-2560.-46.2560.1577@0.23.2560.1345" timestamp="1599103388667" />
+    <state width="1574" height="327" key="GridCell.Tab.0.center" timestamp="1599174649338">
+      <screen x="0" y="23" width="2560" height="1340" />
     </state>
-    <state width="2080" height="302" key="GridCell.Tab.0.left/0.23.2560.1337/-2560.-46.2560.1577@0.23.2560.1337" timestamp="1598952886454" />
-    <state width="2080" height="302" key="GridCell.Tab.0.right" timestamp="1598952886454">
-      <screen x="0" y="23" width="2560" height="1337" />
+    <state width="2518" height="400" key="GridCell.Tab.0.center/0.23.2560.1337/-2560.-46.2560.1577@-2560.-46.2560.1577" timestamp="1598995438833" />
+    <state width="2518" height="330" key="GridCell.Tab.0.center/0.23.2560.1337/-2560.-46.2560.1577@0.23.2560.1337" timestamp="1598996534981" />
+    <state width="1574" height="327" key="GridCell.Tab.0.center/0.23.2560.1340/-2560.-46.2560.1577@0.23.2560.1340" timestamp="1599174649338" />
+    <state width="1574" height="329" key="GridCell.Tab.0.center/0.23.2560.1342/-2560.-46.2560.1577@0.23.2560.1342" timestamp="1599104865734" />
+    <state width="1574" height="328" key="GridCell.Tab.0.center/0.23.2560.1343/-2560.-46.2560.1577@0.23.2560.1343" timestamp="1599170676352" />
+    <state width="1238" height="330" key="GridCell.Tab.0.center/0.23.2560.1345/-2560.-46.2560.1577@0.23.2560.1345" timestamp="1599103388667" />
+    <state width="1574" height="327" key="GridCell.Tab.0.left" timestamp="1599174649338">
+      <screen x="0" y="23" width="2560" height="1340" />
     </state>
-    <state width="2080" height="302" key="GridCell.Tab.0.right/0.23.2560.1337/-2560.-46.2560.1577@0.23.2560.1337" timestamp="1598952886454" />
+    <state width="2518" height="400" key="GridCell.Tab.0.left/0.23.2560.1337/-2560.-46.2560.1577@-2560.-46.2560.1577" timestamp="1598995438833" />
+    <state width="2518" height="330" key="GridCell.Tab.0.left/0.23.2560.1337/-2560.-46.2560.1577@0.23.2560.1337" timestamp="1598996534981" />
+    <state width="1574" height="327" key="GridCell.Tab.0.left/0.23.2560.1340/-2560.-46.2560.1577@0.23.2560.1340" timestamp="1599174649338" />
+    <state width="1574" height="329" key="GridCell.Tab.0.left/0.23.2560.1342/-2560.-46.2560.1577@0.23.2560.1342" timestamp="1599104865734" />
+    <state width="1574" height="328" key="GridCell.Tab.0.left/0.23.2560.1343/-2560.-46.2560.1577@0.23.2560.1343" timestamp="1599170676352" />
+    <state width="1238" height="330" key="GridCell.Tab.0.left/0.23.2560.1345/-2560.-46.2560.1577@0.23.2560.1345" timestamp="1599103388666" />
+    <state width="1574" height="327" key="GridCell.Tab.0.right" timestamp="1599174649361">
+      <screen x="0" y="23" width="2560" height="1340" />
+    </state>
+    <state width="2518" height="400" key="GridCell.Tab.0.right/0.23.2560.1337/-2560.-46.2560.1577@-2560.-46.2560.1577" timestamp="1598995438834" />
+    <state width="2518" height="330" key="GridCell.Tab.0.right/0.23.2560.1337/-2560.-46.2560.1577@0.23.2560.1337" timestamp="1598996534981" />
+    <state width="1574" height="327" key="GridCell.Tab.0.right/0.23.2560.1340/-2560.-46.2560.1577@0.23.2560.1340" timestamp="1599174649361" />
+    <state width="1574" height="329" key="GridCell.Tab.0.right/0.23.2560.1342/-2560.-46.2560.1577@0.23.2560.1342" timestamp="1599104865734" />
+    <state width="1574" height="328" key="GridCell.Tab.0.right/0.23.2560.1343/-2560.-46.2560.1577@0.23.2560.1343" timestamp="1599170676352" />
+    <state width="1238" height="330" key="GridCell.Tab.0.right/0.23.2560.1345/-2560.-46.2560.1577@0.23.2560.1345" timestamp="1599103388667" />
     <state width="2080" height="429" key="GridCell.Tab.1.bottom" timestamp="1598947279272">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
@@ -93,9 +128,27 @@
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="2080" height="429" key="GridCell.Tab.1.right/0.23.2560.1337/-2560.-46.2560.1577@0.23.2560.1337" timestamp="1598947279272" />
-    <state x="945" y="328" width="670" height="676" key="search.everywhere.popup" timestamp="1598946118667">
+    <state x="-1771" y="381" key="SettingsEditor" timestamp="1598958353936">
+      <screen x="-2560" y="-46" width="2560" height="1577" />
+    </state>
+    <state x="-1771" y="381" key="SettingsEditor/0.23.2560.1337/-2560.-46.2560.1577@-2560.-46.2560.1577" timestamp="1598958353936" />
+    <state x="-1550" y="481" width="540" height="524" key="StructurePopup" timestamp="1598994910854">
+      <screen x="-2560" y="-46" width="2560" height="1577" />
+    </state>
+    <state x="-1550" y="481" width="540" height="524" key="StructurePopup/0.23.2560.1337/-2560.-46.2560.1577@-2560.-46.2560.1577" timestamp="1598994910854" />
+    <state x="981" y="446" width="598" height="490" key="find.popup" timestamp="1598996552067">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state x="945" y="328" width="670" height="676" key="search.everywhere.popup/0.23.2560.1337/-2560.-46.2560.1577@0.23.2560.1337" timestamp="1598946118667" />
+    <state x="981" y="446" width="598" height="490" key="find.popup/0.23.2560.1337/-2560.-46.2560.1577@0.23.2560.1337" timestamp="1598996552067" />
+    <state x="945" y="326" key="run.anything.popup" timestamp="1598996473611">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state x="945" y="326" key="run.anything.popup/0.23.2560.1337/-2560.-46.2560.1577@0.23.2560.1337" timestamp="1598996473611" />
+    <state x="945" y="329" width="670" height="677" key="search.everywhere.popup" timestamp="1599179582270">
+      <screen x="0" y="23" width="2560" height="1338" />
+    </state>
+    <state x="945" y="328" width="670" height="676" key="search.everywhere.popup/0.23.2560.1337/-2560.-46.2560.1577@0.23.2560.1337" timestamp="1598996328827" />
+    <state x="945" y="329" width="670" height="677" key="search.everywhere.popup/0.23.2560.1338/-2560.-46.2560.1577@0.23.2560.1338" timestamp="1599179582270" />
+    <state x="945" y="329" width="670" height="678" key="search.everywhere.popup/0.23.2560.1340/-2560.-46.2560.1577@0.23.2560.1340" timestamp="1599173892781" />
   </component>
 </project>

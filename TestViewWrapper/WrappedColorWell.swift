@@ -10,7 +10,7 @@ import Combine
 
 struct WrappedColorWell: NSViewRepresentable {
     typealias NSViewType = NSColorWell
-    @Binding var selectedColor: NSColor
+    @Binding var selectedColor: NSColor?
 
     func makeNSView(context: Context) -> NSColorWell {
         let newCW = NSColorWell(frame: .zero)
@@ -20,9 +20,11 @@ struct WrappedColorWell: NSViewRepresentable {
 
     // Propagate changes from SwiftUI to the View
     func updateNSView(_ nsView: NSColorWell, context: Context) {
-        if (!selectedColor.isEqual(to: nsView.color)) {
-            nsView.color = selectedColor
+        if let s = self.selectedColor {
+            if (!s.isEqual(to: nsView.color)) {
+                nsView.color = s
 //            NSLog("Set color of well (from state) to \(selectedColor)")
+            }
         }
     }
 
@@ -67,10 +69,10 @@ var someColor: NSColor = NSColor.red
 
 struct WrappedColorWell_Previews: PreviewProvider {
     static var previews: some View {
-        WrappedColorWell(selectedColor: Binding<NSColor>(get: { () -> NSColor in
+        WrappedColorWell(selectedColor: Binding<NSColor?>(get: { () -> NSColor? in
             someColor
         }, set: { (color) in
-            someColor = color
+            someColor = color ?? NSColor.black
         }))
     }
 }
