@@ -52,18 +52,25 @@ struct SceneList {
     }
 }
 
+struct AllState {
+    public var scenes: SceneList = SceneList()
+}
+
 class AppState: ObservableObject {
-    @Published var container: SceneList = SceneList()
+    @Published var root: AllState = AllState()
+
+    init(root: AllState) {
+        self.root = root
+    }
 
     public static func fakeData() -> AppState {
-        let appState = AppState()
-        var container = SceneList()
-        container.addItem(item: Item(name: "Foo", color: NSColor.systemIndigo))
-        container.addItem(item: Item(name: "Bar", color: NSColor.systemYellow))
-        container.addItem(item: Item(name: "Muppet", color: NSColor.systemTeal))
-        container.addItem(item: Item(name: "Train", color: NSColor.systemOrange))
-        container.addItem(item: Item(name: "Animal", color: NSColor.systemBrown))
-        appState.container = container
-        return appState
+        var scenes = SceneList()
+        scenes.addItem(item: Item(name: "Foo", color: NSColor.systemIndigo))
+        scenes.addItem(item: Item(name: "Bar", color: NSColor.systemYellow))
+        scenes.addItem(item: Item(name: "Muppet", color: NSColor.systemTeal))
+        scenes.addItem(item: Item(name: "Train", color: NSColor.systemOrange))
+        scenes.addItem(item: Item(name: "Animal", color: NSColor.systemBrown))
+        var allState = AllState(scenes: scenes)
+        return AppState(root: allState)
     }
 }

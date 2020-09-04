@@ -12,11 +12,11 @@ struct ContentView: View {
     @EnvironmentObject var state: AppState
 
     var body: some View {
-        let selection = self.$state.container.selectedItem
+        let selection = self.$state.root.scenes.selectedItem
         let colorBinding: Binding<NSColor> = Binding<NSColor>(get: {
-            self.state.container[selection.wrappedValue]?.color ?? NSColor.black
+            self.state.root.scenes[selection.wrappedValue]?.color ?? NSColor.black
         }, set: { color in
-            self.state.container[selection.wrappedValue]?.color = color
+            self.state.root.scenes[selection.wrappedValue]?.color = color
         })
         
         return VSplitView {
@@ -24,7 +24,7 @@ struct ContentView: View {
                 Text("Hi!")
             }) {
                 List(selection: selection) {
-                    ForEach(state.container.items, id: \.id) { item in
+                    ForEach(state.root.scenes.items, id: \.id) { item in
                         HStack {
                             Text(item.name)
                             Spacer().frame(minHeight: 2)
@@ -44,7 +44,7 @@ struct ContentView: View {
                         WrappedColorWell(selectedColor: colorBinding)
                         Spacer()
                         Rectangle()
-                                .fill(Color(self.state.container[selection.wrappedValue]?.color ?? NSColor.clear))
+                                .fill(Color(self.state.root.scenes[selection.wrappedValue]?.color ?? NSColor.clear))
                     }.frame(minHeight: 32)
                 } else {
                     Text("Select an item up top")

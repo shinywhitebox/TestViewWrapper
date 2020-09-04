@@ -17,7 +17,7 @@ struct ColorEditor: View {
                     self.item.color
                 },
                 set: { color in
-                    self.state.container.updateColorFor(self.item, color)
+                    self.state.root.scenes.updateColorFor(self.item, color)
                 }
         )
     }
@@ -34,7 +34,7 @@ struct ColorEditor: View {
 struct ColorEditor_Previews: PreviewProvider {
     static var previews: some View {
         let state = AppState.fakeData()
-        let item = state.container.items.first!
+        let item = state.root.scenes.items.first!
         return ColorEditor(item: item).environmentObject(state)
     }
 }
