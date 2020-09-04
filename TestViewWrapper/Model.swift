@@ -52,17 +52,11 @@ struct SceneList {
     }
 }
 
-struct AllState {
+struct AppState {
     public var scenes: SceneList = SceneList()
 }
 
-class AppState: ObservableObject {
-    @Published var root: AllState = AllState()
-
-    init(root: AllState) {
-        self.root = root
-    }
-
+struct AppStateMaker {
     public static func fakeData() -> AppState {
         var scenes = SceneList()
         scenes.addItem(item: Item(name: "Foo", color: NSColor.systemIndigo))
@@ -70,7 +64,6 @@ class AppState: ObservableObject {
         scenes.addItem(item: Item(name: "Muppet", color: NSColor.systemTeal))
         scenes.addItem(item: Item(name: "Train", color: NSColor.systemOrange))
         scenes.addItem(item: Item(name: "Animal", color: NSColor.systemBrown))
-        var allState = AllState(scenes: scenes)
-        return AppState(root: allState)
+        return AppState(scenes: scenes)
     }
 }

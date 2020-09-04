@@ -14,6 +14,7 @@
 		28B7295E24FE17C2001DB36D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28B7295C24FE17C2001DB36D /* Main.storyboard */; };
 		28B7296724FE17D7001DB36D /* WrappedColorWell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B7296624FE17D7001DB36D /* WrappedColorWell.swift */; };
 		28B7296924FE17FB001DB36D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B7296824FE17FB001DB36D /* Model.swift */; };
+		338913B3E48E9ACEE4D689F4 /* StoreInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33891DF5263EC1540DEC61DF /* StoreInjection.swift */; };
 		33891FB79FDCF310CBE0FE12 /* ColorEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338915DA4DE2711BD70242E9 /* ColorEditor.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		28B7296624FE17D7001DB36D /* WrappedColorWell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WrappedColorWell.swift; sourceTree = "<group>"; };
 		28B7296824FE17FB001DB36D /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		338915DA4DE2711BD70242E9 /* ColorEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorEditor.swift; sourceTree = "<group>"; };
+		33891DF5263EC1540DEC61DF /* StoreInjection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreInjection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				28B7295924FE17C2001DB36D /* Preview Content */,
 				28B7296824FE17FB001DB36D /* Model.swift */,
 				338915DA4DE2711BD70242E9 /* ColorEditor.swift */,
+				33891DF5263EC1540DEC61DF /* StoreInjection.swift */,
 			);
 			path = TestViewWrapper;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 				28B7295424FE17C1001DB36D /* AppDelegate.swift in Sources */,
 				28B7296924FE17FB001DB36D /* Model.swift in Sources */,
 				33891FB79FDCF310CBE0FE12 /* ColorEditor.swift in Sources */,
+				338913B3E48E9ACEE4D689F4 /* StoreInjection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,24 +7,32 @@
 //
 
 import SwiftUI
+import Combine
 
 struct ContentView: View {
-    @EnvironmentObject var state: AppState
+    @Environment(\.appState) private var state: AppState.Injection
+
+    @State var selection: UUID?
+    @State var selectedItem: Item?
+    @State var color: NSColor = NSColor.black
+
+    var appState: CurrentValueSubject<AppState, Never> {
+        state.appState
+    }
 
     var body: some View {
-        let selection = self.$state.root.scenes.selectedItem
-        let colorBinding: Binding<NSColor> = Binding<NSColor>(get: {
-            self.state.root.scenes[selection.wrappedValue]?.color ?? NSColor.black
-        }, set: { color in
-            self.state.root.scenes[selection.wrappedValue]?.color = color
-        })
-        
+        let colorBinding = self.$color.methodDispatch(to: self.appState) { state, color in
+            if let i = self.selectedItem {
+                state.value.scenes.updateColorFor(i, color)
+            }
+        }
+
         return VSplitView {
             Section(header: HStack {
                 Text("Hi!")
             }) {
-                List(selection: selection) {
-                    ForEach(state.root.scenes.items, id: \.id) { item in
+                List(selection: self.$selection.dispatch(to: appState, \.scenes.selectedItem)) {
+                    ForEach(state.appState.value.scenes.items, id: \.id) { item in
                         HStack {
                             Text(item.name)
                             Spacer().frame(minHeight: 2)
@@ -44,7 +52,7 @@ struct ContentView: View {
                         WrappedColorWell(selectedColor: colorBinding)
                         Spacer()
                         Rectangle()
-                                .fill(Color(self.state.root.scenes[selection.wrappedValue]?.color ?? NSColor.clear))
+                                .fill(Color(self.state.appState.value.scenes[self.selection]?.color ?? NSColor.clear))
                     }.frame(minHeight: 32)
                 } else {
                     Text("Select an item up top")
@@ -52,12 +60,18 @@ struct ContentView: View {
                 Spacer()
             }
         }.frame(minHeight: 200)
+                .onReceive(state.appState) { state in
+                    self.selection = state.scenes.selectedItem
+                    self.selectedItem = state.scenes[self.selection]
+                    self.color = self.selectedItem?.color ?? NSColor.black
+                }
     }
 }
 
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environmentObject(AppState.fakeData())
+        let injected = AppState.Injection.defaultValue
+        return ContentView().environment(\.appState, injected)
     }
 }

@@ -7,8 +7,7 @@ import Foundation
 import SwiftUI
 
 struct ColorEditor: View {
-    @EnvironmentObject var state: AppState
-
+    @Environment(\.appState) private var state: AppState.Injection
     var item: Item
 
     var colorBinding: Binding<NSColor> {
@@ -17,7 +16,7 @@ struct ColorEditor: View {
                     self.item.color
                 },
                 set: { color in
-                    self.state.root.scenes.updateColorFor(self.item, color)
+                    self.state.appState.value.scenes.updateColorFor(self.item, color)
                 }
         )
     }
@@ -33,8 +32,8 @@ struct ColorEditor: View {
 
 struct ColorEditor_Previews: PreviewProvider {
     static var previews: some View {
-        let state = AppState.fakeData()
-        let item = state.root.scenes.items.first!
-        return ColorEditor(item: item).environmentObject(state)
+        let injected = AppState.Injection.defaultValue
+        let item = Item(name: "some random item", color: NSColor.systemPurple)
+        return ColorEditor(item: item).environment(\.appState, injected)
     }
 }
