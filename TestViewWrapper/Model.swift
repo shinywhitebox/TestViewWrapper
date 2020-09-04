@@ -19,20 +19,12 @@ struct Item {
     }
 }
 
-class AppState: ObservableObject {
-    @Published var items: [Item] = []
+struct Container {
+    var items: [Item] = []
+    var selectedItem: UUID?
 
-    func updateColorFor(_ item: Item, _ color: NSColor) {
+    mutating func updateColorFor(_ item: Item, _ color: NSColor) {
         self[item.id]?.color = color
-    }
-
-    @Published var selectedItem: UUID?
-
-    public static func fakeData() -> AppState {
-        let appState = AppState()
-        appState.items.append(Item(name: "Foo", color: NSColor.systemIndigo))
-        appState.items.append(Item(name: "Bar", color: NSColor.systemYellow))
-        return appState
     }
 
     public subscript(id: UUID?) -> Item? {
@@ -50,5 +42,21 @@ class AppState: ObservableObject {
                 }
             }
         }
+    }
+}
+
+class AppState: ObservableObject {
+    @Published var container: Container = Container()
+
+    public static func fakeData() -> AppState {
+        let appState = AppState()
+        var container = Container()
+        container.items.append(Item(name: "Foo", color: NSColor.systemIndigo))
+        container.items.append(Item(name: "Bar", color: NSColor.systemYellow))
+        container.items.append(Item(name: "Muppet", color: NSColor.systemTeal))
+        container.items.append(Item(name: "Train", color: NSColor.systemOrange))
+        container.items.append(Item(name: "Animal", color: NSColor.systemBrown))
+        appState.container = container
+        return appState
     }
 }
